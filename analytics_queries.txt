@@ -1,0 +1,2 @@
+
+customEvents | where name == "NumberTyped: {Number}" | summarize count() by tostring(customDimensions.Number) | render piechart
